@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.FluentValidation
 {
-    public class CategoryValidator:AbstractValidator<Category>
+    public class CustomerValidator:AbstractValidator<Customer>
     {
-        public CategoryValidator() 
+        public CustomerValidator() 
         {
-            RuleFor(x => x.CategoryName).NotEmpty().WithMessage("Kategori Adı Geçilemez");
+            RuleFor(x => x.Name).NotEmpty().WithMessage("Müşteri Adı boş geçilemez");
         }
     }
 }
