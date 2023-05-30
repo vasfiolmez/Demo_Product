@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class CategoryManager:ICategoryService
+    public class CategoryManager : ICategoryService
     {
         ICategoryDal _categoryDal;
         public CategoryManager(ICategoryDal categoryDal)
@@ -17,7 +17,7 @@ namespace BusinessLayer.Concrete
             categoryDal = _categoryDal;
         }
 
-        public List<Category> GetList()
+        public List<Category> TGetList()
         {
             return _categoryDal.GetList();
         }
@@ -39,8 +39,8 @@ namespace BusinessLayer.Concrete
 
         public void TUpdate(Category t)
         {
-           _categoryDal.Update(t);
+            _categoryDal.Update(t);
         }
     }
-    }
 }
+

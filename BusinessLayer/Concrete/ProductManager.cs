@@ -14,10 +14,10 @@ namespace BusinessLayer.Concrete
         IProductDal _productDal;
         public ProductManager(IProductDal productDal)
         {
-            productDal = _productDal;
+            _productDal=productDal;
         }
 
-        public List<Product> GetList()
+        public List<Product> TGetList()
         {
           return  _productDal.GetList();
         }
