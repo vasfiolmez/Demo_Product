@@ -13,5 +13,8 @@
     @Html.TextBoxFor(x=>x.City,new {@class ="form-control"})
     @Html.ValidationMessageFor(x=>x.City)
     <br />
+    <br />
+    @Html.Label("Meslek Seçimi")
+    @Html.DropDownListFor(x=>x.JobID,(List<SelectListItem>)ViewBag.v,new{@class ="form-control"})
     <button class="btn btn-primary">Müşteri Ekle</button>
 </form>

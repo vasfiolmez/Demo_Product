@@ -41,5 +41,10 @@ namespace BusinessLayer.Concrete
         {
            _customerDal.Update(t);
         }
+
+        public List<Customer> GetCustomersListWithJob()
+        {
+            return _customerDal.GetCustomerListWithJob();
+        }
     }
 }
