@@ -1,1 +1,12 @@
-﻿
+﻿arama işlemi
+üyelik sistemi
+identiy
+yardım popup
+footer
+ayarlar
+giriş yap
+çıkış yap
+yeni üye kaydı
+admin--->Aspnet user
+Publish
+Projenin canlıya taşınması
