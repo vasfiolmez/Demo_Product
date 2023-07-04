@@ -50,7 +50,7 @@ namespace Demo_Product
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            IApplicationBuilder applicationBuilder = app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
